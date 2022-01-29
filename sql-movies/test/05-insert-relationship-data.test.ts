@@ -88,7 +88,7 @@ describe("Insert Relationship Data", () => {
   beforeAll(async () => {
     db = await Database.fromExisting("04", "05");
     await CsvLoader.load();
-  }, minutes(5));
+  }, minutes(7));
 
   it(
     "should insert genre relationship data",
@@ -123,7 +123,7 @@ describe("Insert Relationship Data", () => {
 
       done();
     },
-    minutes(5)
+    minutes(7)
   );
 
   it(
@@ -161,7 +161,7 @@ describe("Insert Relationship Data", () => {
 
       done();
     },
-    minutes(5)
+    minutes(7)
   );
 
   it(
@@ -197,7 +197,7 @@ describe("Insert Relationship Data", () => {
 
       done();
     },
-    minutes(5)
+    minutes(7)
   );
 
   it(
@@ -235,7 +235,7 @@ describe("Insert Relationship Data", () => {
 
       done();
     },
-    minutes(5)
+    minutes(7)
   );
 
   it(
@@ -282,6 +282,6 @@ describe("Insert Relationship Data", () => {
 
       done();
     },
-    minutes(5)
+    minutes(7)
   );
 });
